@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>order</title>
+</head>
+<style>
+	body{
+
+
+	font-family: latha;
+		color: white;
+		background:linear-gradient(
+			rgba(0,0,0,0.95),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,30)
+		)
+		,url(img_pizza.jpg)no-repeat;
+		background-size: cover;
+	}
+</style>
+
+
+
+
+<body text="white">
+	<h1 align="center"><u>Yummy Cheesy Pizza</u></h1>
+	
+	<div style="width:80%; margin:auto;">
+		<form method="post" name="forms" action="ordersuccessfull.html" width=70%>
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>First Name:</label><input type="text" name="fname" required size=25 />
+				<label>Last Name</label><input type="text" name="lname" requiredsize=25/>
+				<label>Mobileno.</label><input type="text" name="mobile" required  size=25/>
+				<label>Address:<textarea col=70 row=1 required name="addr"></textarea></label>
+
+			</fieldset>
+			<fieldset>
+				<legend>Order Details</legend>
+				<select name="pizzaname">
+					<option>Select Pizza</option>
+					<option value="1">PANEER & ONION</option>
+					<option value="2">Chicken Dominator</option>
+					<option value="3">Peppy Paneer</option>
+					<option value="4">Mexican Green Wave</option>
+					<option value="5">Paneer Makhani</option>
+					<option value="6"> Margherita</option>
+					<option value="7">Non Veg Supreme</option>
+					<option value="8">CHEESE N TOMATO</option>
+					
+				</select>
+				<select name="size">
+					<option>Select pizza size</option>
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+				</select>
+				<select name="Quantity">
+					<option>Select Quantity</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<label>Delivery Date:</label><input type="date" name="date"/>
+				<label>Delivery Time</label><input type="Time" name="time"/>
+				<select name="payment">
+					<option>Select Payment Option</option>
+					<option value="1">Mobicash</option>
+					<option value="2">Bank Transfer</option>
+					<option value="3">Cash on Delivery</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Cheeses</legend>
+				<input type="radio" name="cheese" value="1" />Mozzarella
+				<input type="radio" name="cheese" value="2" />Reduced Fat
+				<input type="radio" name="cheese" value="3" />Feta
+				<input type="radio" name="cheese" value="3" />Provolone
+				<input type="radio" name="cheese" value="5" />Cheddar
+				<input type="radio" name="cheese" value="6" />Parmesan
+			</fieldset>
+			<fieldset>
+				<legend>Sauces</legend>
+				<input type="radio" name="Sauce" value="1" />Pizza sauce
+				<input type="radio" name="Sauce" value="2" />BBQ sauce
+				<input type="radio" name="Sauce" value="3" />Garlic Sauce
+				<input type="radio" name="Sauce" value="3" />Pesto
+				<input type="radio" name="Sauce" value="5" />Garlic Ranch Sauce
+				<input type="radio" name="Sauce" value="6" />Hummus
+				<input type="radio" name="Sauce" value="7" />Buffalo Sauce
+			</fieldset>
+			
+			<fieldset>
+				<legend>Topping</legend>
+				<input type="checkbox" name="topping" value="1" />Salami
+				<input type="checkbox" name="topping" value="2" />Anchovies
+				<input type="checkbox" name="topping" value="3" />Pepperoni
+				<input type="checkbox" name="topping" value="4" />Green Olives
+				<input type="checkbox" name="topping" value="5" />Mushrooms
+				<input type="checkbox" name="topping" value="6" />Red Onions
+				<input type="checkbox" name="topping" value="7" />Roasted Garlic
+			</fieldset>
+			<fieldset>
+				<legend>Special Instruction</legend>
+			<textarea name="Instruction" rows="3" cols="42"></textarea>
+			</fieldset>
+			<input type="submit" value="PLACE YOUR ORDER" />
+			<input type="reset" value="START OVER" />
+		</div>
+		</form>
+</html>
